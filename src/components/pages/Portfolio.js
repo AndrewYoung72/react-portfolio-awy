@@ -10,7 +10,7 @@ import EcommerceBackend from "../Images/EcommerceBackend.png";
 export default function Portfolio() {
   return (
     <div className="tile is-ancestor is-flex-direction-column">
-      <section className="section is-large">
+      <section className="section">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
             <p className="title">Cocktail Creations</p>
@@ -26,7 +26,7 @@ export default function Portfolio() {
           </article>
         </div>
       </section>
-      <section className="section is-large">
+      <section className="section">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
             <p className="title">Just Park It</p>
@@ -42,7 +42,7 @@ export default function Portfolio() {
           </article>
         </div>
       </section>
-      <section className="section is-large">
+      <section className="section">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
             <p className="title">Weather Dashboard</p>
@@ -58,7 +58,7 @@ export default function Portfolio() {
           </article>
         </div>
       </section>
-      <section className="section is-large">
+      <section className="section">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
             <p className="title">Erie Tech Blog</p>
@@ -74,7 +74,7 @@ export default function Portfolio() {
           </article>
         </div>
       </section>
-      <section className="section is-large">
+      <section className="section">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
             <p className="title">E-Commerce-Backend</p>
@@ -90,7 +90,7 @@ export default function Portfolio() {
           </article>
         </div>
       </section>
-      <section className="section is-large">
+      <section className="section">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
             <p className="title">Team Data Tracker</p>

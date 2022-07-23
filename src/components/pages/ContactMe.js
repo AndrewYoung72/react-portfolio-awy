@@ -1,6 +1,6 @@
-import React from "react";
+
 import "bulma/css/bulma.min.css";
-import { useState } from "react";
+import { useState} from "react";
 
 export default function ContactMe() {
   const [message, setMessage] = useState("");
@@ -12,13 +12,16 @@ export default function ContactMe() {
 
   const handleChange = event => {
     if (!isValidEmail(event.target.value)) {
-      setError("Email is invalid");
+      setError("Not a valid email");
   } else {
     setError(null);
   }
 
   setMessage(event.target.value);
+
 };
+
+
 
   return (
     <div className="container has-background-info">
@@ -42,6 +45,7 @@ export default function ContactMe() {
         </div>
       </div>
       {error && <h2 style={{color: "red"}}>{error}</h2>}
+      
 
     </div>
   );
