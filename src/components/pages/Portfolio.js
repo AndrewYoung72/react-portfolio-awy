@@ -9,100 +9,131 @@ import EcommerceBackend from "../Images/EcommerceBackend.png";
 
 export default function Portfolio() {
   return (
-    <div className="tile is-ancestor is-flex-direction-column">
-      <section className="section">
+    <div className="container">
+      <section className="block">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
-            <p className="title">Cocktail Creations</p>
             <a
-              className="subtitle"
-              href="https://github.com/JesusRodriguezDev/Cocktail_Creations"
+              className="buttons has-addons is-centered title"
+              href="https://jesusrodriguezdev.github.io/Cocktail_Creations/"
             >
-              GitHub Repo
+              Cocktail Creations
             </a>
             <figure className="image is-4by3">
               <img src={CocktailCreations} alt="CocktailCreations"></img>
             </figure>
+            <a
+              className="buttons has-addons is-centered subtitle"
+              href="https://github.com/JesusRodriguezDev/Cocktail_Creations"
+            >
+              GitHub Repo
+            </a>
           </article>
         </div>
       </section>
-      <section className="section">
+      <section className="block">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
-            <p className="title">Just Park It</p>
             <a
-              className="subtitle"
-              href="https://github.com/Noah8863/Just-Park-It"
+              className="buttons has-addons is-centered title"
+              href="https://evening-reaches-05880.herokuapp.com/"
             >
-              GitHub Repo
+              Just Park It
             </a>
             <figure className="image is-4by3">
               <img src={justParkIt} alt="Project 2"></img>
             </figure>
+            <a
+              className="buttons has-addons is-centered subtitle"
+              href="https://github.com/Noah8863/Just-Park-It"
+            >
+              GitHub Repo
+            </a>
           </article>
         </div>
       </section>
-      <section className="section">
+      <section className="block">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
-            <p className="title">Weather Dashboard</p>
             <a
-              className="subtitle"
-              href="https://github.com/AndrewYoung72/06-weather-dashboard-AWY"
+              className="buttons has-addons is-centered title"
+              href="https://andrewyoung72.github.io/06-weather-dashboard-AWY/"
             >
-              GitHub Repo
+              Weather Dashboard
             </a>
             <figure className="image is-4by3">
               <img src={WeatherDashboard} alt="Weather Dashboard"></img>
             </figure>
+            <a
+              className="buttons has-addons is-centered subtitle"
+              href="https://github.com/AndrewYoung72/06-weather-dashboard-AWY"
+            >
+              GitHub Repo
+            </a>
           </article>
         </div>
       </section>
-      <section className="section">
+      <section className="block">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
-            <p className="title">Erie Tech Blog</p>
             <a
-              className="subtitle"
+              className="buttons has-addons is-centered title"
               href="https://intense-ridge-37443.herokuapp.com/"
             >
-              GitHub Repo
+              Erie Tech Blog
             </a>
             <figure className="image is-4by3">
               <img src={ErieTechBlog} alt="Erie Tech Blog"></img>
             </figure>
+            <a
+              className="buttons has-addons is-centered subtitle"
+              href="https://github.com/AndrewYoung72/tech-blog-erie-awy"
+            >
+              GitHub Repo
+            </a>
           </article>
         </div>
       </section>
-      <section className="section">
+      <section className="block">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
-            <p className="title">E-Commerce-Backend</p>
             <a
-              className="subtitle"
+              className="buttons has-addons is-centered title"
+              href="https://github.com/AndrewYoung72/sequalize-e-commerce-back-end"
+            >
+              E-Commerce-Backend(No Deployed page)
+            </a>
+
+            <figure className="image is-4by3">
+              <img src={EcommerceBackend} alt=""></img>
+            </figure>
+            <a
+              className="buttons has-addons is-centered subtitle"
               href="https://github.com/AndrewYoung72/sequalize-e-commerce-back-end"
             >
               GitHub Repo
             </a>
-            <figure className="image is-4by3">
-              <img src={EcommerceBackend} alt=""></img>
-            </figure>
           </article>
         </div>
       </section>
-      <section className="section">
+      <section className="block">
         <div className="tile is-parent">
           <article className="tile is-child notification is-info">
-            <p className="title">Team Data Tracker</p>
             <a
-              className="subtitle"
+              className="buttons has-addons is-centered title"
               href="https://github.com/AndrewYoung72/Team-data-tracker"
             >
-              GitHub Repo
+              Team Data Tracker(No deployed page)
             </a>
             <figure className="image is-4by3">
               <img src={TeamDataTracker} alt=""></img>
             </figure>
+            <a
+              className="buttons has-addons is-centered subtitle"
+              href="https://github.com/AndrewYoung72/Team-data-tracker"
+            >
+              GitHub Repo
+            </a>
           </article>
         </div>
       </section>
