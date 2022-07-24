@@ -1,5 +1,7 @@
 import React from "react";
 import "bulma/css/bulma.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutMe() {
   return (
@@ -32,6 +34,7 @@ export default function AboutMe() {
             <a href="https://github.com/AndrewYoung72"> AndrewYoung72</a>. July
             2022.
           </p>
+          <FontAwesomeIcon icon={faCoffee} />
         </div>
       </footer>
     </div>
