@@ -53,7 +53,13 @@ export default function ContactMe() {
       <div class="field">
         <div class="column is-four-fifths">
           <label class="label">Name</label>
-          <input class="input" type="text" placeholder="Name" value={textMessage} onChange={handleTextChange}></input>
+          <input
+            class="input"
+            type="text"
+            placeholder="Name"
+            value={textMessage}
+            onChange={handleTextChange}
+          ></input>
           {errorMessage && <h2 style={{ color: "red" }}>{errorMessage}</h2>}
         </div>
       </div>
@@ -71,7 +77,12 @@ export default function ContactMe() {
       <div class="field">
         <div class="column is-four-fifths">
           <label class="label">Message</label>
-          <textarea class="input" placeholder="Textarea" value={areaMessage} onChange={handleMessageChange}></textarea>
+          <textarea
+            class="input"
+            placeholder="Textarea"
+            value={areaMessage}
+            onChange={handleMessageChange}
+          ></textarea>
           {errorArea && <h2 style={{ color: "red" }}>{errorArea}</h2>}
         </div>
         <div className="buttons has-addons is-centered">
