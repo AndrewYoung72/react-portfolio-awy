@@ -8,15 +8,10 @@ export default function ContactMe() {
   const [errorMessage, setErrorMessage] = useState(null);
   const [areaMessage, setAreaMessage] = useState("");
   const [errorArea, setErrorArea] = useState(null);
- 
-
-
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // Alert the user their first and last name, clear the inputs
     alert(`Hello, Thank you for submitting your information`);
     setAreaMessage("");
     setTextMessage("");
@@ -103,7 +98,9 @@ export default function ContactMe() {
           {errorArea && <h2 style={{ color: "red" }}>{errorArea}</h2>}
         </div>
         <div className="buttons has-addons is-centered">
-          <button class="button" onClick={handleFormSubmit}>Submit</button>
+          <button class="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
         </div>
       </div>
     </div>
