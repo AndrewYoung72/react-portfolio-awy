@@ -11,9 +11,9 @@ export default function AboutMe() {
           <p class="subtitle">A little about me</p>
         </div>
         <div className="">
-        <figure class="image is-128x128">
-          <img class="is-rounded" src={meWaterfall} alt="it's me"></img>
-        </figure>
+          <figure class="image is-128x128">
+            <img class="is-rounded" src={meWaterfall} alt="it's me"></img>
+          </figure>
         </div>
       </section>
       <section class="section is-medium has-background-info-light">
