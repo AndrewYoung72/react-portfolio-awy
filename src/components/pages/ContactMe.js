@@ -6,6 +6,8 @@ export default function ContactMe() {
   const [error, setError] = useState(null);
   const [textMessage, setTextMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState(null);
+  const [areaMessage, setAreaMessage] = useState("");
+  const [errorArea, setErrorArea] = useState(null);
 
   function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
@@ -21,16 +23,29 @@ export default function ContactMe() {
   };
 
   function isString(name) {
-    return/(.*[a-z]){2}/.test(name);
+    return/(.*[a-z]){2,}/.test(name);
   }
 
   const handleTextChange = (e) => {
     if (!isString(e.target.value)) {
-      setErrorMessage("Name is Required");
+      setErrorArea("Name is Required");
     } else {
       setErrorMessage(null);
     }
     setTextMessage(e.target.value);
+  };
+
+  function checkMessage(message) {
+    return/^[a-zA-Z]{10,}/.test(message);
+  }
+
+  const handleMessageChange = (e) => {
+    if (!checkMessage(e.target.value)) {
+      setErrorArea("At least ten characters are Required");
+    } else {
+      setErrorArea(null);
+    }
+    setAreaMessage(e.target.value);
   };
 
   return (
@@ -54,7 +69,7 @@ export default function ContactMe() {
       <div class="field">
         <div class="column is-four-fifths">
           <label class="label">Message</label>
-          <textarea class="input" placeholder="Textarea" value={textMessage} onChange={handleTextChange}></textarea>
+          <textarea class="input" placeholder="Textarea" value={areaMessage} onChange={handleMessageChange}></textarea>
         </div>
         <div className="buttons has-addons is-centered">
           <button class="button">Submit</button>
@@ -62,6 +77,7 @@ export default function ContactMe() {
       </div>
       {error && <h2 style={{ color: "red" }}>{error}</h2>}
       {errorMessage && <h2 style={{ color: "red" }}>{errorMessage}</h2>}
+      {errorArea && <h2 style={{ color: "red" }}>{errorArea}</h2>}
     </div>
   );
 }
