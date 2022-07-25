@@ -35,6 +35,7 @@ export default function AboutMe() {
             2022.
           </p>
           <FontAwesomeIcon icon={faCoffee} />
+          <FontAwesomeIcon icon="fa-brands fa-github" />
         </div>
       </footer>
     </div>
